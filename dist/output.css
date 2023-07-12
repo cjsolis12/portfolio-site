@@ -571,5 +571,13 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+:root{
+  --primary--dark: #1A294A;
+  --primary--light: #5DC9E9;
+  --pink: #E34A61;
+  --orange: #EC6943;
+  --buttons: #6271DD
+
+}
 
 
