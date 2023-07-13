@@ -27,7 +27,7 @@ export default function About() {
           skills, and making a meaningful impact in the tech world.
         </p>
       </div>
-      <img src={picture} alt="" />
+      <img src={picture} alt="personal-photo" className=" max-w-sm rounded border bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800" />
       <div></div>
     </div>
   );

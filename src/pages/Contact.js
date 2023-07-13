@@ -23,11 +23,6 @@ export default function Contact() {
           class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2"
           placeholder="Email"
         />
-        <input
-          type="tel"
-          class="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2"
-          placeholder="Phone"
-        />
         <textarea
           cols="10"
           rows="5"
