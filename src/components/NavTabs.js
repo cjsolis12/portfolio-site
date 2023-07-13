@@ -3,8 +3,8 @@ import { Link, useLocation} from "react-router-dom";
 export default function NavTabs() {
     const location = useLocation();
     return (
-        <div>
-          <nav className="flex space-x-10 text-blue">
+        <div >
+          <nav className="hidden md:flex space-x-10 text-blue">
         <Link
           to="/about"
           className={`${

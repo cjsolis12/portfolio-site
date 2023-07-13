@@ -14,7 +14,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className=" min-h-screen bg-gradient-to-r from-sky-500 to-indigo-500 relative overflow-hidden">
+    <div className=" min-h-screen">
     <Heading/>
       <Routes>
         <Route path="/" element={<Home />} />

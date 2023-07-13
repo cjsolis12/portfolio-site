@@ -25,8 +25,8 @@ export default function Heading() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center py-8">
-      <div className="container mx-auto flex items-center justify-between px-4 shadow-lg  scale-105 bg-opacity-80">
+    <div className="flex flex-col items-center justify-center py-8 ">
+      <div className="header container flex items-center justify-between px-4 py-3 bg-white bg-opacity-30 rounded-lg backdrop-blur-lg shadow-lg scale-105">
         <div>
         <img
           src={logo}
@@ -36,7 +36,7 @@ export default function Heading() {
         </div>
         <NavTabs />
       </div>
-      <h2 className="text-xl text-gray-700 mt-4">
+      <h2 className="text-xl text-navy-blue text-gray-700 mt-9 mb-7">
         {getTitle()}
       </h2>
     </div>
