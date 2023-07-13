@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+
 
 export default function Resume() {
     return (
         <div>
-            <h1>This is the Resume page</h1>
+            <button><a
+          href="https://docs.google.com/document/d/1zsEbW0x16dFTWi2zpNTR1jfq_0-uqW4orMeG2kbzjFs/export?format=pdf"
+          download="resume.pdf"
+        >
+          Download my Resume!
+        </a></button>
+        <iframe
+        src="https://docs.google.com/document/d/1zsEbW0x16dFTWi2zpNTR1jfq_0-uqW4orMeG2kbzjFs/preview"
+      />
         </div>
     )
 }
