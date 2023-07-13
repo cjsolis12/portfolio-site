@@ -31,7 +31,7 @@ export default function Heading() {
         <img
           src={logo}
           alt="Logo"
-          className="w-43 h-20 object-contain"
+          className="w-43 h-14 object-contain"
         />
         </div>
         <NavTabs />
