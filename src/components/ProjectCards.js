@@ -21,7 +21,7 @@ export default function ProjectCard({project}){
               className="cursor-pointer relative z-10"
             >
               <img src={project.img} alt={project.title} className="" />
-              <h3 className="text-xl font-bold">{project.title}</h3>
+              <h3 className="text-xl ">{project.title}</h3>
               <div className="flex justify-center items-center mt-5">
                 <div className="space-x-2">
                   <Link
@@ -29,7 +29,7 @@ export default function ProjectCard({project}){
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                    <button className="bg-light-blue text-white px-4 py-2 rounded-lg">
                       Github
                     </button>
                   </Link>
@@ -38,7 +38,7 @@ export default function ProjectCard({project}){
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="border border-pink-500 text-pink-500 px-4 py-2 rounded-lg">
+                    <button className="border border-dark-blue text-pink-500 px-4 py-2 rounded-lg">
                       Link
                     </button>
                   </Link>
@@ -53,7 +53,7 @@ export default function ProjectCard({project}){
             onClick={handleFlip}
           >
             <div
-              className="cursor-pointer relative z-10 bg-pink-50 transform rotate-y-180 scale-x-reverse"
+              className="cursor-pointer relative z-10 transform rotate-y-180 scale-x-reverse p-5"
             >
               <p className="text-xl">{project.description}</p>
             </div>

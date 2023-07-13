@@ -4,7 +4,7 @@ import projectData from '../ProjectData'
 
 export default function Portfolio() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 mx-5 md:grid-cols-3 gap-8">
          {projectData.map((project,index) => (
             <ProjectCard key={index} project={project}/>
          ))}
