@@ -49,18 +49,6 @@
 } 
 
 /* Portfolio slide */
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  /* .carousel-slide {
 
-    height: auto;
-    margin: 0 auto;
-  } */
 
   

@@ -37,7 +37,7 @@ export default function Portfolio() {
     }
     return (
       <div className='relative z-10' >
-        <div className="carousel-container flex flex-col justify-center items-center">
+        <div className="carousel-container flex flex-col justify-center items-center h-screen">
         <Carousel slides={slides} {...settings} ref={carouselRef} />
       </div>
       </div>
