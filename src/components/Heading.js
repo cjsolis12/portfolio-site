@@ -11,11 +11,11 @@ export default function Heading() {
   const getTitle = () => {
     switch (location.pathname) {
       case "/":
-        return "Welcome to my website!";
+        return "Welcome to my Website!";
       case "/about":
-        return "About me";
+        return "About Me";
       case "/portfolio":
-        return "My projects";
+        return "My Projects";
       case "/contact":
         return "Get in Touch";
       case "/resume":
@@ -35,7 +35,7 @@ export default function Heading() {
         </div>
       </div>
       <div>
-        <h2 className="text-2xl text-navy-blue text-gray-700 mt-9 mb-7 text-center">
+        <h2 className="text-4xl text-navy-blue text-purple mt-9 mb-7 text-center underline-thin">
           {getTitle()}
         </h2>
       </div>

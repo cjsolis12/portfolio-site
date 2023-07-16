@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;500&display=swap');
+
+
 
 
 .background-container::before{
@@ -45,21 +47,21 @@
     width: 250px;
     height: 400px;
     background:#4a52e357; 
-}
+} 
 
 /* Portfolio slide */
 .carousel-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: aliceblue;
+    height:100vh;
+    background-color: rgb(255, 255, 255);
   }
   
-  .carousel-slide {
+  /* .carousel-slide {
 
     height: auto;
     margin: 0 auto;
-  }
+  } */
 
   

@@ -3,6 +3,7 @@ import ProjectCard from '../components/ProjectCards'
 import projectData from '../ProjectData'
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
+import { FaArrowLeft, FaArrowRight} from "react-icons/fa";
 
 
 
@@ -12,13 +13,13 @@ export default function Portfolio() {
     
     const slides = projectData.map((project) => ({
         key: uuidv4(),
-        content: <img src={project.img} alt={project.title} className='carousel-slide' />,
+        content: <ProjectCard project={project} className='carousel-slide' />,
         onClick: () => console.log("clicked"),
       }));
 
       const settings = {
         showNavigation: true, 
-        offsetRadius: 2, 
+        offsetRadius: 4, 
         animationConfig: { tension: 120, friction: 14 }, 
       };
 
@@ -35,10 +36,8 @@ export default function Portfolio() {
        }
     }
     return (
-        <div className="carousel-container">
+        <div className="carousel-container flex flex-col justify-center items-center">
         <Carousel slides={slides} {...settings} ref={carouselRef} />
-        <div className="carousel-navigation">
-        </div>
       </div>
     )
 }

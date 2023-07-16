@@ -60,7 +60,7 @@ export default function NavTabs() {
       </div>
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-16 right-4 z-10 bg-white p-4 shadow-lg">
+        <div className="md:hidden flex flex-col top-16 right-4 z-10 bg-white p-4 shadow-lg">
           <Link
             to="/about"
             className={`${
