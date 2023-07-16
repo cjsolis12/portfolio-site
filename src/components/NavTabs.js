@@ -17,8 +17,8 @@ export default function NavTabs() {
         <Link
           to="/about"
           className={`${
-            location.pathname === "/about" ? "border-b-2 border-blue-600" : ""
-          } hover:border-blue-600 py-2 text-dark-blue`}
+            location.pathname === "/about" ? "border-b-2 border-aqua text-aqua" : ""
+          } hover:border-b-2 hover:border-aqua  py-2 text-dark-blue`}
         >
           About
         </Link>
@@ -26,25 +26,25 @@ export default function NavTabs() {
           to="/portfolio"
           className={`${
             location.pathname === "/portfolio"
-              ? "border-b-2 border-blue-600"
+              ? "border-b-2 border-aqua  text-aqua"
               : ""
-          } hover:border-blue-600 py-2  text-dark-blue`}
+          }hover:border-b-2 hover:border-aqua  py-2  text-dark-blue`}
         >
           Portfolio
         </Link>
         <Link
           to="/contact"
           className={`${
-            location.pathname === "/contact" ? "border-b-2 border-blue-600" : ""
-          } hover:border-blue-600 py-2  text-dark-blue`}
+            location.pathname === "/contact" ? "border-b-2 border-aqua  text-aqua" : ""
+          }hover:border-b-2 hover:border-aqua  py-2  text-dark-blue`}
         >
           Contact
         </Link>
         <Link
           to="/resume"
           className={`${
-            location.pathname === "/resume" ? "border-b-2 border-blue-600" : ""
-          } hover:border-blue-600 py-2  text-dark-blue`}
+            location.pathname === "/resume" ? "border-b-2 border-aqua  text-aqua" : ""
+          }hover:border-b-2 hover:border-aqua  py-2  text-dark-blue`}
         >
           Resume
         </Link>
@@ -64,8 +64,8 @@ export default function NavTabs() {
           <Link
             to="/about"
             className={`${
-              location.pathname === "/about" ? "border-b-2 border-blue-600" : ""
-            } block py-2 text-dark-blue`}
+              location.pathname === "/about" ? "border-b-2 border-aqua" : ""
+            } hover:border-b-2 hover:border-aqua py-2 text-dark-blue`}
             onClick={toggleDropDown}
           >
             About
@@ -73,8 +73,8 @@ export default function NavTabs() {
           <Link
             to="/portfolio"
             className={`${
-              location.pathname === "/portfolio" ? "border-b-2 border-blue-600" : ""
-            } block py-2 text-dark-blue`}
+              location.pathname === "/portfolio" ? "border-b-2  border-aqua" : ""
+            } hover:border-b-2 hover:border-aqua py-2 text-dark-blue`}
             onClick={toggleDropDown}
           >
             Portfolio
@@ -82,8 +82,8 @@ export default function NavTabs() {
           <Link
             to="/contact"
             className={`${
-              location.pathname === "/contact" ? "border-b-2 border-blue-600" : ""
-            } block py-2 text-dark-blue`}
+              location.pathname === "/contact" ? "border-b-2  border-aqua" : ""
+            } hover:border-b-2 hover:border-aqua py-2 text-dark-blue`}
             onClick={toggleDropDown}
           >
             Contact
@@ -92,7 +92,7 @@ export default function NavTabs() {
             to="/resume"
             className={`${
               location.pathname === "/resume" ? "border-b-2 border-blue-600" : ""
-            } block py-2 text-dark-blue`}
+            } hover:border-b-2 hover:border-aqua py-2 text-dark-blue`}
             onClick={toggleDropDown}
           >
             Resume

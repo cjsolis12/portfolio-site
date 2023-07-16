@@ -6,7 +6,6 @@
 
 
 
-
 .background-container::before{
     content: "";
     position: absolute;
