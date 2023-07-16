@@ -48,7 +48,10 @@
     background:#4a52e357; 
 } 
 
-/* Portfolio slide */
+/* Portfolio */
 
+.carousel-container{
+    background-color: rgb(255, 255, 255);
+}
 
   

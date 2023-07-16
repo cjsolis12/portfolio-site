@@ -19,7 +19,7 @@ export default function Portfolio() {
 
       const settings = {
         showNavigation: true, 
-        offsetRadius: 4, 
+        offsetRadius: 3, 
         animationConfig: { tension: 120, friction: 14 }, 
       };
 
