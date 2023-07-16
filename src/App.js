@@ -20,7 +20,7 @@ function App() {
       <div className="heading relative z-10">
         <Heading />
       </div>
-      <div className="main relative z-10 flex-grow">
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
@@ -28,7 +28,7 @@ function App() {
           <Route path="resume" element={<Resume />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
-      </div>
+    
       <div className="footer relative z-10">
         <Footer />
       </div>
