@@ -30,11 +30,13 @@ export default function Contact() {
           placeholder="Write your message..."
         ></textarea>
       </div>
+      <div className="flex items-center justify-center">
       <button
         type="submit"
         value="Send Message"
         class="focus:outline-none mt-5 bg-purple px-4 py-2 text-white font-bold "
-      />
+      >Submit</button>
+      </div>
     </form>
   </div>
 </div>

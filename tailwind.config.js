@@ -7,8 +7,9 @@ module.exports = {
       'light-blue': '#5DC9E9',
       'aqua': '#25f9c769',
       'aqua2': '#D6FEF2',
-      'grey': '#EC6943',
+      'grey': '#9E9E9E',
       'purple': '#6271DD',
+      'white': '#FAFAFA',
     },
     screens:{
       'sm': '640px',
