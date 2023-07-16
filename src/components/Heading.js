@@ -26,19 +26,16 @@ export default function Heading() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center py-8 ">
         <div className="flex w-full items-center  justify-around px-4 py-3 bg-white bg-opacity-30 rounded-lg backdrop-blur-lg shadow-lg scale-105">
           <div>
             <img src={logo} alt="Logo" className="w-43 h-14 object-contain" />
           </div>
           <NavTabs />
         </div>
-      </div>
-      <div>
+      
         <h2 className="text-4xl text-navy-blue text-purple mt-9 mb-7 text-center underline-thin">
           {getTitle()}
         </h2>
-      </div>
     </>
   );
 }
