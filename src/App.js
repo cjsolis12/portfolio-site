@@ -14,12 +14,13 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className=" min-h-screen">
+    <div className=" min-h-screen flex flex-col">
       <div className="background-container absolute top-0 left-0 w-full h-full z-0"></div>
+      <div className="right-shapes"></div>
       <div className="heading relative z-10">
         <Heading />
       </div>
-      <div className="main relative z-10">
+      <div className="main relative z-10 flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />

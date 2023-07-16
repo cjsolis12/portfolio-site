@@ -4,7 +4,7 @@ import picture from "../components/images/personalPhoto.jpg";
 export default function About() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center px-5 mx:auto mt-10 space-y-0 md:space-y-0">
-      <div className="container flex flex-col mb-32 space-y-12 md:w-1/2 bg-white bg-opacity-30 rounded-lg backdrop-blur-lg shadow-lg p-8 md:mr-8 text-lg leading-relaxed text-gray-800">
+      <div className="container flex flex-col mb-32 space-y-12 md:w-1/2 bg-white bg-opacity-10 rounded-lg backdrop-blur-lg shadow-lg p-8 md:mr-8 text-lg leading-relaxed text-gray-800">
         <p>
           {" "}
           After graduating high school, I embarked on my first career as an

@@ -27,7 +27,7 @@ export default function Heading() {
   return (
     <>
       <div className="flex flex-col items-center justify-center py-8 ">
-        <div className="header container flex items-center justify-between px-4 py-3 bg-white bg-opacity-30 rounded-lg backdrop-blur-lg shadow-lg scale-105">
+        <div className="flex w-full items-center  justify-around px-4 py-3 bg-white bg-opacity-30 rounded-lg backdrop-blur-lg shadow-lg scale-105">
           <div>
             <img src={logo} alt="Logo" className="w-43 h-14 object-contain" />
           </div>
@@ -35,7 +35,7 @@ export default function Heading() {
         </div>
       </div>
       <div>
-        <h2 className="text-xl text-navy-blue text-gray-700 mt-9 mb-7 text-center">
+        <h2 className="text-2xl text-navy-blue text-gray-700 mt-9 mb-7 text-center">
           {getTitle()}
         </h2>
       </div>

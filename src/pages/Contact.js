@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div class="container mx-auto my-20 w-1/3 border border-light-blue bg-white">
+    <div class="container mx-auto my-20 w-1/3 border border-light-blue bg-white bg-opacity-10 rounded-lg backdrop-blur-lg shadow-lg ">
   <div class="p-5 space-y-5 shadow-xl">
     <h4 class="text-center text-3xl"></h4>
 

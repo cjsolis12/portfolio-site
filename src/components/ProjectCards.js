@@ -11,10 +11,10 @@ export default function ProjectCard({ project }) {
   };
 
   return (
-    <div className="h-full">
+    <div className="h-full bg-white rounded-lg ">
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
         {/* Front of the card */}
-        <div className="max-w-sm mb-4 relative shadow-lg" onClick={handleFlip}>
+        <div className="max-w-sm mb-4 relative bg-white shadow-lg" onClick={handleFlip}>
           <div className="cursor-pointer relative z-10">
             <img src={project.img} alt={project.title} className="" />
             <h3 className="text-xl p-4 ">{project.title}</h3>
@@ -41,7 +41,7 @@ export default function ProjectCard({ project }) {
         </div>
 
         {/* Back of the card */}
-        <div className="max-w-sm mb-4 relative shadow-lg" onClick={handleFlip}>
+        <div className="max-w-sm mb-4 relative shadow-lg bg-white" onClick={handleFlip}>
           <div className="cursor-pointer relative z-10 transform rotate-y-180 scale-x-reverse p-5">
             <p className="text-xl">{project.description}</p>
           </div>
