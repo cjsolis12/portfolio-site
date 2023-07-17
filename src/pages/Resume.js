@@ -1,6 +1,6 @@
 import React from "react";
 import FrontEndSkills from "../components/FrontEndSkills";
-import BackendSkills from "../components/BackendSkills"
+import BackendSkills from "../components/BackendSkills";
 
 export default function Resume() {
   return (
@@ -16,18 +16,24 @@ export default function Resume() {
                 Download!
               </a>
             </button>
-            <iframe
-              className="h-100vh max-w-full"
-              src="https://docs.google.com/document/d/1zsEbW0x16dFTWi2zpNTR1jfq_0-uqW4orMeG2kbzjFs/preview"
-            />
+            <div className="resume-container">
+              <iframe
+                className="resume-iframe"
+                src="https://docs.google.com/document/d/1zsEbW0x16dFTWi2zpNTR1jfq_0-uqW4orMeG2kbzjFs/preview"
+                type="application/pdf"
+              >
+                <p>Your browser does not support PDFs.{""}</p>
+              </iframe>
+            </div>
+            <iframe className="h-100vh max-w-full" src="" />
           </div>
           <div className="">
-          <div className="frontend-skills">
-            <FrontEndSkills />
-          </div>
-          <div className="Backend-skills">
-            <BackendSkills />
-          </div>
+            <div className="frontend-skills">
+              <FrontEndSkills />
+            </div>
+            <div className="Backend-skills">
+              <BackendSkills />
+            </div>
           </div>
         </div>
       </div>
