@@ -26,16 +26,15 @@ export default function Heading() {
 
   return (
     <>
-      <header className="h-16 bg-white bg-opacity-30 rounded-lg backdrop-blur-lg shadow-lg">
+      <header className="h-24 bg-white bg-opacity-30 rounded-lg backdrop-blur-lg shadow-lg">
         <div className="flex items-center justify-around max-w-7xl mx-auto h-full">
           <img src={logo} alt="Logo" className="object-contain logo-svg" />
           <NavTabs />
         </div>
-
-        <h2 className="text-4xl  text-dark-blue mt-9 mb-7 text-center ">
-          {getTitle()}
-        </h2>
       </header>
+      <h2 className="text-4xl  text-dark-blue mt-9 mb-7 text-center ">
+        {getTitle()}
+      </h2>
     </>
   );
 }
