@@ -40,7 +40,7 @@ export default function ProjectCard({ project }) {
               {project.technologies.map((tech, i) => (
                 <span
                   key={i}
-                  className="px-2 py-1 m-1 text-sm  text-white rounded-lg border border-gray-300"
+                  className="px-2 py-1 m-1 text-sm  text-dark-blue rounded-lg border border-dark-blue"
                 >
                   {tech}
                 </span>
