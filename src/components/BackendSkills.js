@@ -1,55 +1,52 @@
-import React, {useState} from "react";
-import { FaReact, FaHtml5, FaBootstrap } from "react-icons/fa6";
+import React from "react";
+import { FaNode, FaHtml5, FaBootstrap } from "react-icons/fa6";
 import { PiFileCssLight } from "react-icons/pi";
-import { SiChakraui } from "react-icons/si";
+import { SiJavascript, SiMysql, SiExpress, SiMongodb, SiFireship } from "react-icons/si";
 
 export default function Resume() {
-    const [isListOpen, setListOpen] = useState(false)
-
-    const toggleList = () => {
-        setListOpen(!isListOpen);
-    }
-    
   return (
     <>
       <div className="column bg-white bg-opacity-10 rounded-lg">
         <div className="row">
-          <button className="text-xl border-b border-dark-blue" onClick={toggleList} > Front End Proficiencies</button>
-          {isListOpen && (
-            <ul>
+          <h2 className="text-xl border-b border-dark-blue" >  Back End Proficiencies</h2>
+          <ul>
             <li className="flex items-center space-x-2">
               <i>
-                <FaReact />
+                <SiJavascript />
               </i>
-              <span>React</span>
+              <span>JavaScript</span>
             </li>
             <li className="flex items-center space-x-2">
               <i>
-                <FaHtml5 />
+                <FaNode />
               </i>
-              <span>HTML</span>
+              <span>Node</span>
             </li>
             <li className="flex items-center space-x-2">
               <i>
-                <PiFileCssLight />
+                <SiExpress />
               </i>
-              <span>CSS</span>
+              <span>Express</span>
             </li>
             <li className="flex items-center space-x-2">
               <i>
-                <FaBootstrap />
+                <SiMysql />
               </i>
-              <span>Bootstrap</span>
+              <span>MySql</span>
             </li>
             <li className="flex items-center space-x-2">
               <i>
-                <SiChakraui />
+                <SiMongodb />
               </i>
-              <span>Chakra Ui</span>
+              <span>MongoDB</span>
+            </li>
+            <li className="flex items-center space-x-2">
+              <i>
+                <SiFireship />
+              </i>
+              <span>FireShip</span>
             </li>
           </ul>
-          )}
-          
         </div>
       </div>
     </>

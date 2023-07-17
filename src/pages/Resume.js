@@ -1,5 +1,6 @@
 import React from "react";
 import FrontEndSkills from "../components/FrontEndSkills";
+import BackendSkills from "../components/BackendSkills"
 
 export default function Resume() {
   return (
@@ -20,8 +21,13 @@ export default function Resume() {
               src="https://docs.google.com/document/d/1zsEbW0x16dFTWi2zpNTR1jfq_0-uqW4orMeG2kbzjFs/preview"
             />
           </div>
-          <div className="fontend-skills">
+          <div className="">
+          <div className="frontend-skills">
             <FrontEndSkills />
+          </div>
+          <div className="Backend-skills">
+            <BackendSkills />
+          </div>
           </div>
         </div>
       </div>
