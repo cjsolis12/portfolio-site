@@ -9,47 +9,54 @@
 .background-container::before{
     content: "";
     position: absolute;
-    top: 200px;
-    left: 50px;
+    top: 400px;
+    left: 20px;
     width: 450px;
     height: 200px;
-    background:#4a52e357;
+    background-image: url('C:\Users\cjeli\OneDrive\Desktop\bootcamp\portfolio-site\src\components\images\bg2.svg'); 
+    background-repeat: no-repeat;
    
 }
 
 .background-container::after{
     content: "";
     position: absolute;
-    top: 10px;
+    top: 100px;
     left: 70px;
-    width: 350px;
-    height: 500px;
-    background:#25f9c77c; 
-    opacity:.5; 
+    width: 300px;
+    height: 300px;
+    background-image: url('C:\Users\cjeli\OneDrive\Desktop\bootcamp\portfolio-site\src\components\images\bg3.svg'); 
 }
 
-.right-shapes::before{
-    content: "";
-    position: absolute;
-    top: 300px;
-    right: 150px;
-    width: 330px;
-    height: 350px;
-    background:#25f9c769; 
-}
+
 
 .right-shapes::after{
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 50px;
     right: 100px;
     width: 250px;
-    height: 400px;
-    background:#4a52e357; 
+    height: 500px;
+    background-image: url('C:\Users\cjeli\OneDrive\Desktop\bootcamp\portfolio-site\src\components\images\bg3.svg'); 
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
 } 
 
-/* Portfolio */
+.right-shapes::before{
+    content: "";
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    width: 250px;
+    height: 500px;
+    background-image: url('C:\Users\cjeli\OneDrive\Desktop\bootcamp\portfolio-site\src\components\images\bg4.svg'); 
+    background-repeat: no-repeat;
+}
 
+
+
+
+/* Portfolio */
 .carousel-container{
     background-color: rgb(255, 255, 255);
 }
