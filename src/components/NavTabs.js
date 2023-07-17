@@ -53,9 +53,9 @@ export default function NavTabs() {
       {/* Hamburger Menu */}
       <div className="md:hidden flex items-center">
         {isOpen ? (
-          <FaTimes className="text-2xl text-blue cursor-pointer" onClick={toggleDropDown} />
+          <FaTimes className="text-2xl text-blue cursor-pointer " onClick={toggleDropDown} />
         ) : (
-          <FaBars className="text-2xl text-blue cursor-pointer" onClick={toggleDropDown} />
+          <FaBars className="text-2xl text-blue cursor-pointer text-aqua" onClick={toggleDropDown} />
         )}
       </div>
       {/* Dropdown Menu */}

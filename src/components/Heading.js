@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import NavTabs from "./NavTabs";
-import logo from "./images/ClaudiaSolis.png";
+import logo from "./images/logo.svg";
 
 export default function Heading() {
   const location = useLocation();
@@ -26,16 +26,16 @@ export default function Heading() {
 
   return (
     <>
-        <div className="flex w-full items-center  justify-around px-4 py-3 bg-white bg-opacity-30 rounded-lg backdrop-blur-lg shadow-lg scale-105">
-          <div>
-            <img src={logo} alt="Logo" className="w-43 h-14 object-contain" />
-          </div>
+      <header className="h-16 bg-white bg-opacity-30 rounded-lg backdrop-blur-lg shadow-lg">
+        <div className="flex items-center justify-around max-w-7xl mx-auto h-full">
+          <img src={logo} alt="Logo" className="object-contain logo-svg" />
           <NavTabs />
         </div>
-      
+
         <h2 className="text-4xl  text-dark-blue mt-9 mb-7 text-center ">
           {getTitle()}
         </h2>
+      </header>
     </>
   );
 }
