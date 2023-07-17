@@ -33,7 +33,7 @@ export default function Heading() {
           <NavTabs />
         </div>
       
-        <h2 className="text-4xl text-navy-blue text-purple mt-9 mb-7 text-center underline-thin">
+        <h2 className="text-4xl  text-dark-blue mt-9 mb-7 text-center ">
           {getTitle()}
         </h2>
     </>

@@ -34,7 +34,7 @@ export default function Contact() {
       <button
         type="submit"
         value="Send Message"
-        class="focus:outline-none mt-5 bg-purple px-4 py-2 text-white font-bold "
+        class="focus:outline-none mt-5 bg-dark-blue px-4 py-2 text-white font-bold "
       >Submit</button>
       </div>
     </form>
