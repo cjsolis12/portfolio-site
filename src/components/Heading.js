@@ -28,7 +28,7 @@ export default function Heading() {
     <>
       <header className="h-24 bg-white bg-opacity-30 rounded-lg backdrop-blur-lg shadow-lg">
         <div className="flex items-center justify-around max-w-7xl mx-auto h-full">
-          <img src={logo} alt="Logo" className="object-contain logo-svg" />
+          <Link to="/"><img src={logo} alt="Logo" className="object-contain logo-svg" /></Link>
           <NavTabs />
         </div>
       </header>
