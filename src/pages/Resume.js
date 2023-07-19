@@ -6,13 +6,14 @@ import {FaServer} from "react-icons/fa"
 
 export default function Resume() {
   const handleDownload = () => {
-    const fileUrl = ""
+    const fileUrl = "https://docs.google.com/document/d/1zsEbW0x16dFTWi2zpNTR1jfq_0-uqW4orMeG2kbzjFs/export?format=pdf";
+    window.open(fileUrl)
   }
   return (
     <>
       <div className="relative min-h-screen">
         <div className="flex flex-col justify-center items-center h-screen w-full">
-      <button className="animate-bounce bg-aqua inline-block border rounded-md px-3">Download Resume</button>
+      <button className="animate-bounce bg-aqua inline-block border rounded-md px-3" onClick={handleDownload}>Download Resume</button>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
           <div className="column bg-white bg-opacity-10 p-4 md:p-8  shadow-lg shadow-grey rounded-lg backdrop-blur-md">
            <div className="bg-light-blue bg-opacity-25 rounded-full w-10 h-10 flex justify-center items-center">
