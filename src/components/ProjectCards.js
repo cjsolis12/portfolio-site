@@ -6,9 +6,15 @@ import { FaGithub, FaLink } from "react-icons/fa";
 export default function ProjectCard({ project }) {
   const [isFlipped, setFlipped] = useState(false);
 
-  const handleFlip = () => {
-    setFlipped(!isFlipped);
+  const handleFlip = (e) => {
+    
+    const isLink = e.target.tagName === "a";
+
+    if (!isLink) {
+      setFlipped(!isFlipped);
+    }
   };
+  
 
   return (
     <div className="bg-white rounded-lg ">
@@ -29,13 +35,13 @@ export default function ProjectCard({ project }) {
         {/* Back of the card */}
         <div
           className="max-w-sm mb-4 relative shadow-lg "
-          onClick={handleFlip}
+         
         >
           <div className="grid grid-rows-3 p-4 gap-1">
-          <div className="absolute inset-0 ">
+          <div className="absolute inset-0 " onClick={handleFlip}>
             <h3 className="text-xl  bg-dark-blue bg-opacity-50 hover:bg-opacity-0 transition duration-300">{project.title}</h3>
           </div>
-            <p className="text-xl ">{project.description}</p>
+            <p className="text-xl" >{project.description}</p>
             <div className="col-span-2 flex flex-wrap justify-center items-center">
               {project.technologies.map((tech, i) => (
                 <span
@@ -46,10 +52,10 @@ export default function ProjectCard({ project }) {
                 </span>
               ))}
             </div>
-            <div className="flex justify-center items-center text-xl">
+            <div className="z-10 flex justify-center items-center text-xl">
               <a
                 className="hover:text-light-blue flex justify-center rounded-full bg-aqua2 p-2"
-                to={project.githubLink}
+                href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -57,7 +63,7 @@ export default function ProjectCard({ project }) {
               </a>
               <a
                 className="hover:text-light-blue flex justify-center rounded-full bg-aqua2 p-2"
-                to={project.websiteLink}
+               href={project.websiteLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
