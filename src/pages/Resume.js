@@ -5,6 +5,9 @@ import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import {FaServer} from "react-icons/fa"
 
 export default function Resume() {
+  const handleDownload = () => {
+    const fileUrl = ""
+  }
   return (
     <>
       <div className="relative min-h-screen">
