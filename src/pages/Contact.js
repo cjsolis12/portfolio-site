@@ -21,6 +21,21 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    const newErrors = { ...errors };
+
+    if (value.trim() === "") {
+      newErrors[name] = `* ${name.charAt(0).toUpperCase() + name.slice(1)} can not be empty`;
+    } else {
+      newErrors[name] = "";
+    }
+
+    setErrors(newErrors);
+  };
+
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -83,6 +98,7 @@ export default function Contact() {
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
+              onBlur={handleBlur}
               className={`border border-light-blue px-4 py-2 focus:outline-none focus:border-purple ${
                 errors.firstName && "border-red-500"
               }`}
@@ -96,6 +112,7 @@ export default function Contact() {
               name="lastName"
               value={formData.lastName}
               onChange={handleChange}
+              onBlur={handleBlur}
               className={`border border-light-blue px-4 py-2 focus:outline-none focus:border-purple ${
                 errors.lastName && "border-red-500"
               }`}
@@ -109,6 +126,7 @@ export default function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              onBlur={handleBlur}
               className={`border border-light-blue px-4 py-2 focus:outline-none focus:border-purple col-span-2 ${
                 errors.email && "border-red-500"
               }`}
@@ -119,6 +137,7 @@ export default function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
+              onBlur={handleBlur}
               cols="10"
               rows="5"
               className={`border border-light-blue px-4 py-2 focus:outline-none focus:border-purple col-span-2 ${
