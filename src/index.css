@@ -18,7 +18,7 @@
   left: 20px;
   width: 450px;
   height: 200px;
-  background-image: url("C:\Users\cjeli\OneDrive\Desktop\bootcamp\portfolio-site\src\components\images\bg2.svg");
+  background-image: url("../src/components/images/bg2.svg");
   background-repeat: no-repeat;
 }
 
@@ -29,7 +29,7 @@
   left: 70px;
   width: 300px;
   height: 300px;
-  background-image: url("C:\Users\cjeli\OneDrive\Desktop\bootcamp\portfolio-site\src\components\images\bg3.svg");
+  background-image: url("../src/components/images/bg3.svg");
 }
 
 .right-shapes::after {
