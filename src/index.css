@@ -39,7 +39,7 @@
   right: 100px;
   width: 250px;
   height: 500px;
-  background-image: url("C:\Users\cjeli\OneDrive\Desktop\bootcamp\portfolio-site\src\components\images\bg3.svg");
+  background-image: url("../src/components/images/bg3.svg");
   transform: rotate(180deg);
   background-repeat: no-repeat;
 }
@@ -51,7 +51,7 @@
   right: 100px;
   width: 250px;
   height: 500px;
-  background-image: url("C:\Users\cjeli\OneDrive\Desktop\bootcamp\portfolio-site\src\components\images\bg4.svg");
+  background-image: url("../src/components/images/bg4.svg");
   background-repeat: no-repeat;
 }
 
