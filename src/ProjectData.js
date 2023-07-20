@@ -34,11 +34,19 @@ const projectData = [
     {
         img:require("../src/components/images/homefeed.png"),
         title:"Code Board",
-        description: "my role for this project was designing the bulletin board layout for the main feed. Additionally, I created the models and configured the database seeds.",
+        description: "My role for this project was designing the bulletin board layout for the main feed. Additionally, I created the models and configured the database seeds.",
         technologies: ["MVC", "HandleBars", "Group Project", "Sequelize", ],
         githubLink: "https://github.com/Timmackie/code-board",
         websiteLink: "https://codeboard.herokuapp.com/login"
     },
+    {
+        img:require("../src/components/images/note_taking.png"),
+        title:"Note Taking",
+        description: "This note taking app uses express as a backend framework to save and retrieve note data.",
+        technologies: ["Node", "uuid", "JSON" ],
+        githubLink: "https://github.com/cjsolis12/note_taking",
+        websiteLink: "https://noted123-faa75257550d.herokuapp.com/notes"
+    }
 
 ]
 
