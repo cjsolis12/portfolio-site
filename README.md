@@ -3,7 +3,8 @@
   ## Description
  This react application is a single page application demontrating my portfolio of all the work I have created.
 
-![Image Description](public/images/homepage.png)
+![Image Description](src/components/images/websiteScreenShot.png)
+![Image Description](src/components/images/websiteScreenShot2.png)
 
   ## Table of Contents
   * [Installation](#installation)
