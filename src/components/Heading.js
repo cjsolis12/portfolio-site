@@ -19,7 +19,7 @@ export default function Heading() {
       case "/contact":
         return "Get in Touch";
       case "/resume":
-        return "My Resume";
+        return "My Resume / Skills";
       default:
     }
   };
