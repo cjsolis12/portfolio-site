@@ -1,7 +1,7 @@
 # My Portfolio
 
   ## Description
- This react application is a single page application demontrating my portfolio of all the work I have created.
+ This react application is a single page application demonstrating my portfolio of all the work I have created.
 
 ![Image Description](src/components/images/websiteScreenShot.png)
 ![Image Description](src/components/images/websiteScreenShot2.png)
@@ -19,8 +19,8 @@
   N/A
 
   ## Usage
-  Repo: https://github.com/cjsolis12/mvc-TechBlog.git 
-  Deployed app: https://salty-reaches-15784.herokuapp.com/
+  Repo: https://github.com/cjsolis12/portfolio-site.git
+  Deployed app: https://portfolio-site-a5a1echl6-cjsolis12.vercel.app/resume 
 
 
   ## Credits
