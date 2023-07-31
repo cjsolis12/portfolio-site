@@ -46,6 +46,14 @@ const projectData = [
         technologies: ["Node", "uuid", "JSON" ],
         githubLink: "https://github.com/cjsolis12/note_taking",
         websiteLink: "https://noted123-faa75257550d.herokuapp.com/notes"
+    },
+    {
+        img:require("../src/components/images/shortStack.png"),
+        title:"Short Stack",
+        description: "As part of this video social app development, I focused on implementing the user's database functionality, which included handling user authentication, user data storage, and user related actions.",
+        technologies: ["FireBase", "React", "Tailwind" ],
+        githubLink: "https://github.com/KodaCaleb/ShortStack",
+        websiteLink: ""
     }
 
 ]
