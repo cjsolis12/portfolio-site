@@ -12,7 +12,7 @@ export default function Hero({ currentSection }) {
   switch (currentSection) {
     case "home":
       heroImage = home;
-      heroText = "Welcome to our home page";
+      heroText = "Claudia Solis";
       break;
     case "about":
       heroImage = about;
