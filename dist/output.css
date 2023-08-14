@@ -640,6 +640,11 @@ video {
   color: rgb(199 166 197 / var(--tw-text-opacity));
 }
 
+.text-oliveGreen {
+  --tw-text-opacity: 1;
+  color: rgb(208 206 39 / var(--tw-text-opacity));
+}
+
 .duration-500 {
   transition-duration: 500ms;
 }
@@ -659,6 +664,16 @@ body {
 @media (prefers-color-scheme: light) {
 
 } */
+
+.hover\:text-teal:hover {
+  --tw-text-opacity: 1;
+  color: rgb(22 144 134 / var(--tw-text-opacity));
+}
+
+.hover\:text-oliveGreen:hover {
+  --tw-text-opacity: 1;
+  color: rgb(208 206 39 / var(--tw-text-opacity));
+}
 
 @media (min-width: 768px) {
   .md\:flex {

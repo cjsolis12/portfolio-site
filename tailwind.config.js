@@ -33,6 +33,10 @@ export default {
           borderRadius: "0.25rem",
         },
       },
+      animation: {
+        'bounce-slow': 'bounce 1.5s infinite',
+        'underline-slow': 'underline 1s ease-in-out',
+    },
     },
   },
   plugins: [],

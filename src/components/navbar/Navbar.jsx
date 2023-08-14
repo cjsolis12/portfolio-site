@@ -5,7 +5,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="navbar flex justify-between items-center h-24 max-w-[1240px]mx-auto px-4 text-lilac" >
+            <nav className="navbar flex justify-between items-center h-24 max-w-[1240px]mx-auto px-4 text-lilac text-xl" >
                 <h1 className="text-xl text-lilac">CLAUDIA SOLIS</h1>
                 <NavLinks/>
                 <NavMobile/>
