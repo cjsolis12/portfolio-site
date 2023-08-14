@@ -550,6 +550,10 @@ video {
   top: 0px;
 }
 
+.left-\[-100\%\] {
+  left: -100%;
+}
+
 .m-4 {
   margin: 1rem;
 }
