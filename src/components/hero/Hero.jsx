@@ -12,32 +12,32 @@ export default function Hero({ currentSection }) {
   switch (currentSection) {
     case "home":
       heroImage = home;
-      heroText = "Claudia Solis";
+      heroText = "Claudia Solis Full Stack Web Developer";
       break;
     case "about":
       heroImage = about;
-      heroText = "Learn more about us";
+      heroText = "About Me.";
       break;
     case "work":
       heroImage = fierce;
-      heroText = "Learn more about us";
+      heroText = "My Work.";
       break;
       case "skills":
         heroImage = resume;
-        heroText = "Learn more about us";
+        heroText = "Strengths and Skills.";
         break;
     case "contact":
       heroImage = contact;
-      heroText = "Learn more about us";
+      heroText = "Love to Hear from You.";
       break;
 
     default:
-      heroImage = "default-image.jpg";
+      heroImage = home;
       heroText = "Default hero text";
   }
 
   return (
-    <div className="hero">
+    <div className="hero relative">
       <img src={heroImage} alt={currentSection} />
       <h2>{heroText}</h2>
     </div>
