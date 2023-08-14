@@ -1,43 +1,8 @@
-# My Portfolio
+# React + Vite
 
-  ## Description
- This react application is a single page application demonstrating my portfolio of all the work I have created.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-![Image Description](src/components/images/websiteScreenShot.png)
-![Image Description](src/components/images/websiteScreenShot2.png)
+Currently, two official plugins are available:
 
-  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Credits](#credits)
-  * [License](#license)
-  * [How to Contribute](#how-to-contribute)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  
-  ## Installation
-  N/A
-
-  ## Usage
-  Repo: https://github.com/cjsolis12/portfolio-site.git
-  Deployed app: https://portfolio-site-a5a1echl6-cjsolis12.vercel.app/resume 
-
-
-  ## Credits
-
-  - Gradient css background : https://cssgradient.io/    
-  - [https://getbootstrap.com/docs   ](https://tailwindui.com/components)
-  - https://freefrontend.com/tailwind-feature-sections/
-  -[ https://mdbootstrap.com/docs ](https://react-icons.github.io/react-icons/)
-  - https://svghub.vercel.app/
-  
-
-  ## How to Contribute
-  N/A
-
-  ## Tests
-  N/A
-
-  ## Questions
-  Questions about this app?  
-  GitHub: https://github.com/cjsolis12  
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
