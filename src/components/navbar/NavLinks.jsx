@@ -5,7 +5,7 @@ export default function NavLinks() {
     <>
       <ul className="navigation-links hidden md:flex">
         <li className="p-4 hover:underline-slow">
-          <Link to="/about" className="hover: text-oliveGreen">
+          <Link to="/about" className="hover:text-oliveGreen">
             About
           </Link>
         </li>

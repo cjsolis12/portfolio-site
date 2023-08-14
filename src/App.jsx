@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./index.css";
 
 //Layouts
-import Navbar from "./components/navbar/Navbar";
+import Layout from "./layouts/Layout";
 
 //Main Pages
 import Home from './pages/Home'
@@ -15,14 +15,13 @@ function App() {
   return (
     <>
     <div>
-      <Navbar/>
-    <Routes>
-            <Route path="" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="work" element={<Work />} />
-            <Route path="skills" element={<Skills />} />
-            <Route path="contact" element={<Contact />} />
-          </Routes>
+      <Routes>
+        <Route element={<Layout currentSection="home"><Home /></Layout>} />
+        <Route path="about" element={<Layout currentSection="about"><About /></Layout>} />
+        <Route path="work" element={<Layout currentSection="work"><Work /></Layout>} />
+        <Route path="skills" element={<Layout currentSection="skills"><Skills /></Layout>} />
+        <Route path="contact" element={<Layout currentSection="contact"><Contact /></Layout>} />
+      </Routes>
     </div>
     </>
   );
