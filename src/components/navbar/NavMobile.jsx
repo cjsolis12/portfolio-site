@@ -15,7 +15,7 @@ export default function NavMobile() {
                 {!nav ? <TfiClose size={20}/> : <RxHamburgerMenu size={20}/>  }
                 
             </div>
-            <div className={!nav ? "fixed left-0 top-0 w-[50%] h-full bg-stone-900" : "fixed left-[-100%]"}>
+            <div className={!nav ? "fixed left-0 top-0 w-[50%] h-full bg-stone-900 ease-in-out duration-500" : "fixed left-[-100%]"}>
             <h1 className="w-full text-xl text-lilac m-4">CLAUDIA SOLIS</h1>
             <ul className="mobile-links uppercase p-4" >
                 <li className="p-2 border-b border-gray-600">About</li>
