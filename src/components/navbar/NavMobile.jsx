@@ -11,7 +11,7 @@ export default function NavMobile() {
 
     return (
         <>
-            <div className="navbar" >
+            <div className="navbar-icon" onClick={handleNav} >
                 {!nav ? <TfiClose size={20}/> : <RxHamburgerMenu size={20}/>  }
                 
             </div>
