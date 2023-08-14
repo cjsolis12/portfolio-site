@@ -19,6 +19,20 @@ export default {
         charcoal: "#373737",
         lilac: "#C7A6C5",
       },
+      buttons: {
+        primary: {
+          backgroundColor: "#D0CE27",
+          color: "charcoal",
+          padding: "0.5rem 1rem",
+          borderRadius: "0.25rem",
+        },
+        secondary: {
+          backgroundColor: "lilac",
+          color: "charcoal",
+          padding: "0.5rem 1rem",
+          borderRadius: "0.25rem",
+        },
+      },
     },
   },
   plugins: [],
