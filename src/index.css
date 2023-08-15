@@ -68,7 +68,7 @@ body {
 .hero-text {
   position: absolute;
   top: 40%;
- 
+
   transform: translate(-50%, -50%);
   z-index: 2;
   color: white;
@@ -77,10 +77,16 @@ body {
   text-align: center;
 }
 
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
 /* Hero text mobile sizing */
 @media (max-width: 768px) {
   .hero-text {
-    font-size: 2.5rem; 
-    top: 50%; 
+    font-size: 2.5rem;
+    top: 50%;
   }
 }
