@@ -1,7 +1,11 @@
 export default function Work() {
 
     return (
-   <h1>Work</h1>
+      <>
+    <div className="m-4">
+
+    </div>
+   </>
     )
   }
   
