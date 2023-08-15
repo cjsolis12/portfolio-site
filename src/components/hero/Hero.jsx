@@ -36,7 +36,7 @@ export default function Hero({ currentSection }) {
 
     default:
       heroImage = home;
-      heroText = "Default hero text";
+      heroText = "Welcome to my website!";
   }
 
     // Get the current location from React Router

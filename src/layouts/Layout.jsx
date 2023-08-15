@@ -11,7 +11,7 @@ const Layout = ({ children, currentSection }) => {
           <Hero currentSection={currentSection} />
         </div>
       </div>
-      <div className="main">{children}</div>
+      <div className="main p-10">{children}</div>
     </>
   );
 };

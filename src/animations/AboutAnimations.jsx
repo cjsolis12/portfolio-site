@@ -1,10 +1,10 @@
 import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
-
-const AnimatedText = ({ text, className }) => {
+const AboutAnimation = ({ text, className }) => {
   return (
     <motion.span
-      initial={{ y: 20, opacity: 0 }}
+      initial="hidden"
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className={className}
@@ -12,7 +12,7 @@ const AnimatedText = ({ text, className }) => {
       {text.split("").map((char, index) => (
         <motion.span
           key={index}
-          initial={{ y: 20, opacity: 0 }}
+          initial="hidden"
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.10, delay: 0.10 * index }}
         >
@@ -23,4 +23,4 @@ const AnimatedText = ({ text, className }) => {
   );
 };
 
-export { AnimatedText };
+export { AboutAnimation };
