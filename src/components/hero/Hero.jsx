@@ -37,17 +37,18 @@ export default function Hero({ currentSection }) {
   }
 
   return (
-    <div className="hero h-screen z-0">
-      <img
-        src={heroImage}
-        alt={currentSection}
-        className="object-cover h-full w-full"
-      />
-      <div className="absolute inset-0 z-20 bg-gradient-to-b from-black to-transparent"></div>
-      <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold z-30">
-        {heroText}
-      </h2>
-      
-    </div>
+    <>
+      <div className="hero">
+        <div>
+          <div className="image-filter"></div>
+          <img src={heroImage} alt={currentSection} className="hero-img " />
+        </div>
+      </div>
+      <div>
+        <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold z-30">
+          {heroText}
+        </h2>
+      </div>
+    </>
   );
 }

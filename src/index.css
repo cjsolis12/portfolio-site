@@ -21,3 +21,28 @@ body {
   align-items: center;
   width: 100vw;
 }
+
+.hero{
+  height: 50%;
+}
+
+.hero-img{
+  position: relative;
+  z-index: 10;
+  width: 100vw;
+  object-position: center;
+  object-fit: cover;
+  height: 50vh;
+}
+
+.hero  .image-filter{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle, rgba(199,166,197,0.23303573138239675) 20%, rgba(64,64,64,0.6083858714384192) 70%);
+  z-index: 20;
+  height: 50vh;
+
+}
