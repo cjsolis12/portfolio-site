@@ -1,18 +1,19 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 
 html, body, #root {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
+
   background-color: #373737;
 }
 
@@ -29,21 +30,12 @@ body {
   color: white;
 }
 
-/* hero and main content */
-.layout {
-  position: relative;
-}
-
 .hero-container {
   position: relative;
   z-index: 1;
 }
 
-/* Main Page contents */
-.main {
-  position: relative;
-  z-index: 2;
-}
+
 
 .image-container {
   position: relative;

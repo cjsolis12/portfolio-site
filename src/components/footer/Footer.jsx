@@ -31,7 +31,7 @@ export default function Footer() {
             href="mailto:cjelizondo12@gmail.com"
             target="_blank"
             rel="noopener"
-            class="text-gray-400 hover:text-gray-500"
+            className="text-gray-400 hover:text-gray-500"
           >
             <span class="sr-only">
               <TfiEmail />
