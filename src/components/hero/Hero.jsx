@@ -1,4 +1,7 @@
 import React from "react";
+import { AnimatedText } from "../../animations/AnimatedText";
+import { useLocation } from "react-router-dom";
+
 import home from "../../assets/color2.jpg";
 import about from "../../assets/about.jpg";
 import fierce from "../../assets/fierce.jpg";
@@ -36,15 +39,18 @@ export default function Hero({ currentSection }) {
       heroText = "Default hero text";
   }
 
+    // Get the current location from React Router
+    const location = useLocation();
+
   return (
     <>
       <div className="hero">
     <div className="image-container">
       <img src={heroImage} alt={currentSection} className="hero-img" />
       <div className="image-filter"></div>
-      <h2 className="hero-text">
-        {heroText}
-      </h2>
+      <AnimatedText text={heroText}
+      className="hero-text">
+      </AnimatedText>
     </div>
   </div>
     </>
