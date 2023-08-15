@@ -5,10 +5,12 @@ import Hero from "../components/hero/Hero"
 const Layout = ({ children, currentSection }) => {
   return (
     <div className="layout">
-      {/* <Navbar /> */}
+    {/* <Navbar /> */}
+    <div className="hero-container">
       <Hero currentSection={currentSection} />
-      <div className="main">{children}</div>
     </div>
+    <div className="main">{children}</div>
+  </div>
   );
 };
 

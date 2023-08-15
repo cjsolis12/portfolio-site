@@ -22,13 +22,25 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  color: white;
 }
 
-.hero{
+.layout{
   position: relative;
-  height: 100vh;
-  overflow: hidden;
 }
+
+
+.hero-container {
+  position: relative;
+  z-index: 1; 
+}
+
+.main {
+  position: relative;
+  z-index: 2;
+}
+
+
 
 .image-container {
   position: relative;
@@ -49,7 +61,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: radial-gradient(circle, rgba(64,64,64,0.3506827902059261) 0%, rgba(199,166,197,0.7232318098137693) 46%);
+  background: radial-gradient(circle, rgba(64,64,64,0.3506827902059261) 0%, rgba(100, 63, 43, 0.728) 46%);
   z-index: 1;
  
 
