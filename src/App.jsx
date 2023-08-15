@@ -15,7 +15,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <>
-    <div className="">
+ 
       
     <Navbar/>
       <Routes>
@@ -60,7 +60,7 @@ function App() {
           }
         />
       </Routes>
-      </div>
+  
     </>
   );
 }
