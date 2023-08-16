@@ -646,6 +646,10 @@ video {
   margin-top: 1rem;
 }
 
+.mr-8{
+  margin-right: 2rem;
+}
+
 .block{
   display: block;
 }
@@ -849,6 +853,11 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .uppercase{

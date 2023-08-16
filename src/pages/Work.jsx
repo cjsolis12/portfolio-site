@@ -46,12 +46,12 @@ export default function Work() {
                   <p className="text-white text-lg md:text-xl lg:text-2xl xl:text-3xl p-4">
                     {item.description}
                   </p>
-                  <div className="mt-4 flex text-2xl">
+                  <div className="mt-4 flex text-3xl">
                     <a
                       href={item.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-lilac mr-4"
+                      className="text-lilac p-4"
                     >
                       <FaGithub />
                     </a>
@@ -59,7 +59,7 @@ export default function Work() {
                       href={item.websiteLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-lilac"
+                      className="text-lilac p-4"
                     >
                       <FaLink />
                     </a>
