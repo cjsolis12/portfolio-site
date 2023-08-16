@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 export default function NavLinks() {
   return (
     <>
+    <div>
       <ul className="navigation-links hidden md:flex">
         <li className="p-4 hover:underline-slow">
           <Link to="/about" className="hover:text-lilac">
@@ -27,6 +28,7 @@ export default function NavLinks() {
           </Link>
         </li>
       </ul>
+      </div>
     </>
   );
 }

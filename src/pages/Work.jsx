@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import ExtraWork from "../components/work/ExtraWork";
 import { motion } from "framer-motion";
 import projects from "../data/projects";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
+import { useScroll } from "framer-motion";
+
 
 export default function Work() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -14,9 +17,11 @@ export default function Work() {
   const handleHoverEnd = () => {
     setHoveredIndex(null);
   };
+
+  useScroll
   return (
     <>
-      <div className="mt-64 m-6">
+      <div className="mt-64 m-6 mb-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((item, index) => (
             <div
@@ -46,7 +51,7 @@ export default function Work() {
                   <p className="text-white text-lg md:text-xl lg:text-2xl xl:text-3xl p-4">
                     {item.description}
                   </p>
-                  <div className="mt-4 flex text-3xl">
+                  <div className="flex text-3xl">
                     <a
                       href={item.githubLink}
                       target="_blank"
@@ -70,6 +75,8 @@ export default function Work() {
           ))}
         </div>
       </div>
+      <ExtraWork/>
     </>
+   
   );
 }
