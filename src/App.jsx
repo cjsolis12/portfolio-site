@@ -16,8 +16,6 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <>
- 
-      
     <Navbar/>
       <Routes>
         <Route

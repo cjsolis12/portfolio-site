@@ -6,18 +6,13 @@
 @tailwind utilities;
 
 
-html, body, #root {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: #373737;
 }
 
 /* Navigation over hero */
-.nav {
+/* .nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -27,17 +22,17 @@ body {
   align-items: center;
   width: 100%;
   color: white;
-}
+} */
 
-.hero-container {
+/* .hero-container {
   z-index: 1;
-}
+} */
 
-.image-container {
+/* .image-container {
   position: relative;
   width: 100%;
   height: 50%;
-}
+} */
 
 .hero-img {
   width: 100%;
@@ -45,7 +40,7 @@ body {
   object-fit: cover;
 }
 
-.image-filter {
+/* .image-filter {
   position: absolute;
   top: 0;
   right: 0;
@@ -56,9 +51,9 @@ body {
     rgba(64, 64, 64, 0.3506827902059261) 0%,
     rgba(100, 63, 43, 0.728) 46%
   );
-  z-index: 1;
-}
-.hero-text {
+ ;
+} */
+/* .hero-text {
   position: absolute;
   top: 40%;
 
@@ -68,14 +63,14 @@ body {
   font-size: 5rem;
   width: 100%;
   text-align: center;
-}
+} */
 
 
 
 /* Hero text mobile sizing */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hero-text {
     font-size: 2.5rem;
     top: 50%;
   }
-}
+} */

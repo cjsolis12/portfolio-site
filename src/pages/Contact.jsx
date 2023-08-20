@@ -1,43 +1,71 @@
 export default function Contact() {
-
-    return (
-  <>
- <div className="mt-64">
-  <div className="flex flex-col container px-5 py-24 ">
-    <div className="flex flex-col text-center w-full mb-12">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Me</h1>
-    
-    </div>
-    <div className="lg:w-1/2 md:w-2/3 mx-auto">
-      <div className="flex flex-wrap -m-2">
-        <div className="p-2 w-1/2">
-          <div className="relative">
-            <label for="name" className="leading-7 text-sm text-gray-600">Name</label>
-            <input type="text" id="name" name="name" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-          </div>
+  return (
+    <>
+      <div className="w-full md:w-96 p-2 md: mx-50">
+        <div className="flex flex-col p-8 border border-lilac">
+          <form method="POST" action="">
+            <label className="block mb-6">
+              <span className="text-gray-700">Your name</span>
+              <input
+                type="text"
+                name="name"
+                className="
+            block
+            w-full
+            mt-1
+            border-gray-300
+            rounded-md
+            shadow-sm
+            focus:border-indigo-300
+            focus:ring
+            focus:ring-indigo-200
+            focus:ring-opacity-50
+          "
+                placeholder="Name"
+              />
+            </label>
+            <label className="block">
+              <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+                Email
+              </span>
+              <input
+                type="email"
+                name="email"
+                class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+                placeholder="you@example.com"
+              />
+            </label>
+            <label className="block mb-6">
+              <span className="text-gray-700">Message</span>
+              <textarea
+                name="message"
+                className="
+            block
+            w-full
+            mt-1
+            border-gray-300
+            rounded-md
+            shadow-sm
+            focus:border-indigo-300
+            focus:ring
+            focus:ring-indigo-200
+            focus:ring-opacity-50
+          "
+                rows="3"
+                placeholder="Send me a message!"
+              ></textarea>
+            </label>
+            <div className="mb-6">
+              <button
+                type="submit"
+                className="btn bg-lilac text-charcoal w-3 h-2"
+              >
+                Contact Me
+              </button>
+            </div>
+          </form>
         </div>
-        <div className="p-2 w-1/2">
-          <div className="relative">
-            <label for="email" classNameName="leading-7 text-sm text-gray-600">Email</label>
-            <input type="email" id="email" name="email" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-          </div>
-        </div>
-        <div className="p-2 w-full">
-          <div className="relative">
-            <label for="message" className="leading-7 text-sm text-gray-600">Message</label>
-            <textarea id="message" name="message" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-          </div>
-        </div>
-        <div className="p-2 w-full">
-          <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        </div>
-      
       </div>
-    </div>
-  </div>
-  </div>
-
-  </>
-    );
-  }
-  
+    </>
+  );
+}

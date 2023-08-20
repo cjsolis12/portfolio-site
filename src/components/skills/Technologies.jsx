@@ -1,7 +1,6 @@
-import Technologies from "../components/skills/Technologies"
+import React from "react";
 
-export default function Skills() {
-
+export default function Technologies() {
   return (
     <>
       <div className="">
@@ -13,5 +12,4 @@ export default function Skills() {
       </div>
     </>
   );
-  }
-  
+}
