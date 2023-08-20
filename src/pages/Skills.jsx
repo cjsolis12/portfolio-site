@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
     <div className="mt-8">
-      <div className="flex justify-center gap-4 p-4 text-white">
+      <div className="flex justify-between gap-4 p-4 text-white">
         <div className="basis-1/3 text-5xl">
           Technologies.
         </div>
