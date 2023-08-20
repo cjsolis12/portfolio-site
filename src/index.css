@@ -68,9 +68,9 @@ body {
 
 
 /* Hero text mobile sizing */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .hero-text {
     font-size: 2.5rem;
     top: 50%;
   }
-} */
+}

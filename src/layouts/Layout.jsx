@@ -5,9 +5,9 @@ import Hero from "../components/hero/Hero";
 const Layout = ({ children, currentSection }) => {
   return (
     <>
-      <div className="layout">
+      <div className="layout mb-8">
         {/* <Navbar /> */}
-        <div className="hero-container">
+        <div className="hero-container ">
           <Hero currentSection={currentSection} />
         </div>
       </div>
