@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="px-4 py-12 sm:px-6 lg:px-8 text-lilac ">
-        <div className="flex justify-items-center justify-center mt-8 space-x-6">
+        <div className="flex justify-items-center justify-center mt-8 space-x-6 text-2xl">
           <a
             href="https://www.linkedin.com/in/claudia-solis-48599422a/"
             target="_blank"
