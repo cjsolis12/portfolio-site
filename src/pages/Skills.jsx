@@ -1,11 +1,11 @@
 export default function Skills() {
   return (
     <div className="m-4">
-      <div className="flex justify-between gap-4 p-4 text-white">
-        <div className="w-1/4 text-5xl text-white">
+      <div className="flex align-baseline justify-between gap-4 p-4 text-white">
+        <div className="text-5xl text-white">
           Technologies.
         </div>
-        <div className="flex w-3/4 gap-8">
+        <div className="flex justify-around gap-8">
         <div className="flex flex-col gap-4 justify-between pl-4">
           <div className="text-xl  text-lilac">FRONT-END</div>
          
