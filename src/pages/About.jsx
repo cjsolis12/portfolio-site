@@ -12,8 +12,7 @@ export default function About() {
           <p className="text-white mt-4 text-lg md:text-base">
             I transitioned from esthetician to teacher, driven by a love for
             learning and creativity. Yet, it was in the tech industry where I
-            discovered my true passion. Embracing innovation, I now thrive on
-            exciting challenges and endless possibilities.{" "}
+            discovered my true passion. {" "}
           </p>
         </div>
       </div>
