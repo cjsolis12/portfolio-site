@@ -1,12 +1,12 @@
 export default function Skills() {
   return (
-    <div className="m-4">
-      <div className="flex align-baseline justify-between gap-4 p-4 text-white">
+    <div className="mt-8 md:mx-12 ">
+      <div className="md:flex align-baseline justify-between gap-4 p-4 text-white">
         <div className="text-5xl text-white">
           Technologies.
         </div>
         <div className="flex justify-around gap-8">
-        <div className="flex flex-col gap-4 justify-between pl-4">
+        <div className="flex flex-col justify-between p-4">
           <div className="text-xl  text-lilac">FRONT-END</div>
          
             <li>HTML</li>
@@ -19,7 +19,7 @@ export default function Skills() {
             <li>Material UI</li>
         
         </div>
-        <div className="flex flex-col gap-4 ">
+        <div className="flex flex-col  p-4">
           <div className="text-xl  text-lilac">BACK-END</div>
          
             <li>Node JS</li>
@@ -29,7 +29,7 @@ export default function Skills() {
             <li>MySQL</li>
         
         </div>
-        <div className="flex flex-col gap-4 ">
+        <div className="flex flex-col p-4 ">
           <div className="text-xl  text-lilac">Other</div>
        
             <li>Git</li>
