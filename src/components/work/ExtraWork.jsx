@@ -1,15 +1,22 @@
 export default function ExtraWork() {
-    return (
-      <>
+  return (
+    <>
       <div className="projects mt-64 pt-40">
-        <h2 className="p-4  text-lilac text-5xl text-center">Other Projects/Work</h2>
-        <div className="flex">
-            <div className="border border-white rounded p-4 text-white">01</div>
-            <div className="border border-white">01</div>
-            <div className="border border-white">01</div>
+        <h2 className="p-8  text-lilac text-5xl text-center ">
+          Other Projects / Work
+        </h2>
+        <div className="flex gap-8 justify-center">
+          <div className="other-projects  text-white">
+            <h3 className="text-center m-4">Case Studies</h3>
+          </div>
+          <div className="other-projects  text-white">
+            <h3 className="text-center m-4"></h3>
+          </div>
+          <div className="other-projects  text-white">
+            <h3 className="text-center m-4">Case Studies</h3>
+          </div>
         </div>
       </div>
-      </>
-    );
-  }
-  
+    </>
+  );
+}

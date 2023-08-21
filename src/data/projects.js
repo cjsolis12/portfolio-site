@@ -51,8 +51,8 @@ const projects = [
         title:"Short Stack",
         description: "As part of this video social app development, I focused on implementing the user's database functionality, which included handling user authentication, user data storage, and user related actions.",
         technologies: ["React", "TailWind", "Group Project", "Firebase"],
-        githubLink: "",
-        websiteLink: ""
+        githubLink: "https://github.com/KodaCaleb/ShortStack",
+        websiteLink: "https://shortstack.vercel.app/"
     }
 
 ]
