@@ -35,7 +35,7 @@ export default function Skills() {
             <li>Git</li>
             <li>GitHub</li>
            
-            <div className="text-xl  text-lilac">Cloud</div>
+            <div className="text-xl mt-8 text-lilac">Cloud</div>
             <li>AWS</li>
             <li>FireStore</li>
         </div>
