@@ -2,11 +2,11 @@ export default function Contact() {
   return (
     <>
       <div className="flex justify-center items-center py-12 ">
-        <div className=" bg-white border rounded-lg shadow-lg p-8 w-1/3">
-        <h2 className="text-2xl font-bold text-lilac">Send an Email!</h2>
-        <div className="mt-8 w-1/3">
-          <div className="grid grid-cols-1 gap-6">
-            <label className="block mt-4">
+        <div className=" bg-lilac border rounded-lg p-8 w-1/3">
+        <h2 className="text-3xl font-bold text-lilac text-center">Send an Email!</h2>
+        <div className=" mt-8 w-1/3 text-1xl">
+          <div className="flex flex-col gap-6 m-4">
+            <label className="block mt-4 mb-4">
               <span className="text-lilac">Full name</span>
               <input
                 type="text"
@@ -22,7 +22,7 @@ export default function Contact() {
                 placeholder=""
               />
             </label>
-            <label className="mt-4">
+            <label className="mt-4 pb-4">
               <span className="text-lilac">Email address</span>
               <input
                 type="email"

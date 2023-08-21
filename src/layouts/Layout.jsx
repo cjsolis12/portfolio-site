@@ -7,7 +7,7 @@ const Layout = ({ children, currentSection }) => {
     <>
       <div className="layout mb-8">
         {/* <Navbar /> */}
-        <div className="hero-container ">
+        <div className="hero-container h-screen/2">
           <Hero currentSection={currentSection} />
         </div>
       </div>
