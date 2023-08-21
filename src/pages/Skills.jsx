@@ -1,11 +1,11 @@
 export default function Skills() {
   return (
     <div className="mt-8 md:mx-12 flex flex-col items-center">
-      <div className="md:flex justify-between gap-8 p-4 text-white">
+      <div className="md:flex justify-between gap-8 p-8 text-white">
         <div className="text-left text-5xl text-white">
           Technologies.
         </div>
-        <div className="md:flex justify-around gap-8 ">
+        <div className="md:flex justify-around gap-8 align-top">
         <div className="flex flex-col justify-between p-4">
           <div className="text-xl  text-lilac">FRONT-END</div>
          
