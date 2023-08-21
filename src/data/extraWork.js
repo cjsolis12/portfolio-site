@@ -17,4 +17,12 @@ const extraWork = [
         "Instantly generate a secure, random password with this tool. This app features dynamically updated HTML and CSS powered by Javascript code.",
       link: "https://cjsolis12.github.io/Password_Generator/",
     },
+    {
+      title: "Ecommerce Backend",
+      description:
+        "This node application uses express and MySQL to build a backend for an e-commerce site. Sequelize is used to connect and interact with the database. The schema is designed to link certain tables by id.",
+      link: "https://github.com/cjsolis12/ecommerce_backend/tree/main/E-Commerce",
+    },
   ];
+
+  export default extraWork;
