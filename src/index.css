@@ -11,6 +11,7 @@ body {
   background-color: #222121;
 }
 
+/* Extra projects and work on work page */
 .other-projects{
   border: 1px solid rgba(255,255,255,.11);
   border-left: 5px solid rgba(255,255,255,.11);
@@ -24,6 +25,28 @@ body {
   border-color: #C7A6C5;
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+.btn-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid#C7A6C5;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-link:hover {
+  background-color: #C7A6C5;
+  color: #000;
+}
+
+
+
+
+
+
+
 /* Navigation over hero */
 /* .nav {
   position: absolute;
