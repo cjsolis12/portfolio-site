@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TfiClose } from "react-icons/tfi";
+import { Link } from "react-router-dom";
 
 export default function NavMobile() {
   const [nav, setNav] = useState(false);
   const isMobileScreen = window.innerWidth <= 768;
 
+  
   const handleNav = () => {
     setNav(!nav);
   };
@@ -31,10 +33,18 @@ export default function NavMobile() {
         >
           <h1 className="w-full text-xl text-lilac m-4">CLAUDIA SOLIS</h1>
           <ul className="mobile-links uppercase p-4">
-            <li className="p-2 border-b border-gray-600">About</li>
-            <li className="p-2 border-b border-gray-600">Work</li>
-            <li className="p-2 border-b border-gray-600">Skills</li>
-            <li className="p-2 border-b border-gray-600">Contact</li>
+            <li className="p-2 border-b border-gray-600">  <Link to="/about" className="hover:text-lilac">
+            About
+          </Link></li>
+            <li className="p-2 border-b border-gray-600"> <Link to="/work" className="hover:text-lilac">
+            Work
+          </Link></li>
+            <li className="p-2 border-b border-gray-600"> <Link to="/skills" className="hover:text-lilac">
+            Skills
+          </Link></li>
+            <li className="p-2 border-b border-gray-600">  <Link to="/contact" className="hover:text-lilac">
+            Contact
+          </Link></li>
           </ul>
         </div>
       )}
