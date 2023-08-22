@@ -59,18 +59,30 @@ body {
   width: 100%;
   text-align: center;
 }
+/* End of Hero Image  */
 
 /* Resume Buttons */
-.resume-btn{
+.resume-btn, .resume-btn-home{
   transition: all .1s linear;
     border: 1px solid #C7A6C5;
     display: inline-block;
     padding: 10px 20px;
 }
 
-.resume-btn:hover{
+.resume-btn:hover {
   background: #C7A6C5;
 }
+
+.resume-btn-home{
+  position: absolute;
+  top: 80%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 20px;
+}
+
+
 /* Extra projects and work on work page */
 .other-projects {
   border: 1px solid rgba(255, 255, 255, 0.11);

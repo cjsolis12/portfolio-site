@@ -39,20 +39,34 @@ export default function Hero({ currentSection }) {
       heroText = "Welcome to my website!";
   }
 
-    // Get the current location from React Router
-    const location = useLocation();
+  //Resume Download
+  const handleResumeDownload = () => {
+    const fileUrl =
+      "https://docs.google.com/document/d/1zsEbW0x16dFTWi2zpNTR1jfq_0-uqW4orMeG2kbzjFs/export?format=pdf";
+    window.open(fileUrl);
+  };
+
+  // Get the current location from React Router
+  const location = useLocation();
 
   return (
     <>
       <div className="hero">
-    <div className="image-container">
-      <img src={heroImage} alt={currentSection} className="hero-img" />
-      <div className="image-filter"></div>
-      <AnimatedText text={heroText}
-      className="hero-text">
-      </AnimatedText>
-    </div>
-  </div>
+        <div className="image-container">
+          <img src={heroImage} alt={currentSection} className="hero-img" />
+          <div className="image-filter"></div>
+          <AnimatedText text={heroText} className="hero-text"></AnimatedText>
+          {/* Conditionally render the buttons only on the home page */}
+          {currentSection === "home" && (
+            <div className="hero-buttons">
+              <button onClick={handleResumeDownload} className="resume-btn-home">
+                Resume
+              </button>
+              {/* Add other button here */}
+            </div>
+          )}
+        </div>
+      </div>
     </>
   );
 }
