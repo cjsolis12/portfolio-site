@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
     //Email Functions
@@ -16,8 +17,7 @@ export default function Contact() {
   
     const sendEmail = (e) => {
       e.preventDefault();
-      const user_email = e.target.elements.user_email.value;
-  
+      
       emailjs
         .sendForm(
           "service_b49i52f",
@@ -29,12 +29,19 @@ export default function Contact() {
           (result) => {
             console.log(result.text);
             notifySuccess();
+            resetForm();
           },
           (error) => {
             console.log(error.text);
           }
         );
     };
+
+    //Function to reset form
+    const resetForm = () => {
+      form.current.reset()
+    }
+
   return (
     <>
       <div className="center-screen">
@@ -58,7 +65,7 @@ export default function Contact() {
              
                     focus:border-primary focus:ring focus:ring-indigo-200 focus:ring-opacity-50
                   "
-                placeholder=""
+                placeholder="John Doe"
               />
             </label>
             <label className="mt-4 pb-4">
@@ -99,8 +106,8 @@ export default function Contact() {
         </form>
      
         </div>
-        <ToastContainer></ToastContainer>
       </div>
+      <ToastContainer></ToastContainer>
     </>
   );
 }
