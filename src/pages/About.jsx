@@ -39,7 +39,15 @@ export default function About() {
           </p>
         </motion.div>
       </div>
-      <p className="text-white p-10 text-lg md:text-base">
+      <motion.p 
+         variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 0.25 }}
+      className="text-white p-10 text-lg md:text-base">
         As a full-stack web developer, I find joy in both frontend and backend
         work. However, I have a special interest in the backend technologies. I
         am fascinated by how different technologies work together to create
@@ -51,7 +59,7 @@ export default function About() {
         . I am eager to expand my knowledge and explore technologies like
         GraphQL, AWS and other cloud based services. I am deeply motivated to
         continue learning and refining my skills to make an impact in tech.
-      </p>
+      </motion.p>
     </div>
   );
 }
