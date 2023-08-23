@@ -34,18 +34,42 @@ export default function NavMobile() {
         >
           <h1 className="w-full text-xl text-lilac m-4">CLAUDIA SOLIS</h1>
           <ul className="mobile-links uppercase p-4">
-            <li className="p-2 border-b border-gray-600">  <Link to="/about" className="hover:text-lilac">
-            About
-          </Link></li>
-            <li className="p-2 border-b border-gray-600"> <Link to="/work" className="hover:text-lilac">
-            Work
-          </Link></li>
-            <li className="p-2 border-b border-gray-600"> <Link to="/skills" className="hover:text-lilac">
-            Skills
-          </Link></li>
-            <li className="p-2 border-b border-gray-600">  <Link to="/contact" className="hover:text-lilac">
-            Contact
-          </Link></li>
+            <li className="p-2 border-b border-gray-600">
+              {" "}
+              <Link to="/about" className="hover:text-lilac">
+                About
+              </Link>
+            </li>
+            <li className="p-2 border-b border-gray-600">
+              {" "}
+              <Link to="/work" className="hover:text-lilac">
+                Work
+              </Link>
+            </li>
+            <li className="p-2 border-b border-gray-600">
+              {" "}
+              <Link to="/skills" className="hover:text-lilac">
+                Skills
+              </Link>
+            </li>
+            <li className="p-2 border-b border-gray-600">
+              {" "}
+              <Link to="/contact" className="hover:text-lilac">
+                Contact
+              </Link>
+            </li>
+            <li className="p-2 border-b border-gray-600">
+              {" "}
+              <a
+                href=  "https://docs.google.com/document/d/1zsEbW0x16dFTWi2zpNTR1jfq_0-uqW4orMeG2kbzjFs/export?format=pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-lilac"
+                download="ClaudiaSolisResume.pdf"
+              >
+                Download Resume
+              </a>
+            </li>
           </ul>
         </div>
       )}
