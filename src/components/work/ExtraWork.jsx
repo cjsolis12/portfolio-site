@@ -4,8 +4,8 @@ export default function ExtraWork() {
   return (
     <>
 <div className="projects mt-64 pt-40">
-  <h2 className="p-8 text-lilac text-5xl text-center">Other Projects / Work</h2>
-  <div className="md: grid grid-cols-3 gap-8 p-8">
+  <h2 className="p-8 text-lilac text-5xl text-center ">Other Projects / Work</h2>
+  <div className="extra-work flex  gap-4 justify-center flex-wrap p-8">
     {extraWork.map((extraWork, index) => (
       <div key={index} className="other-projects flex flex-col text-white border border-white rounded-lg p-8">
         <h3 className="text-center m-4 text-2xl">{extraWork.title}</h3>
