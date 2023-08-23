@@ -24,7 +24,14 @@ export default function Work() {
       <div className="mt-64 m-10 mb-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((item, index) => (
-            <div
+            <motion.div
+            variants={{
+              hidden: { opacity: 0, y: -200 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.5, delay: 0.25 }}
               key={index}
               className="flex flex-col relative"
               onMouseEnter={() => handleHoverStart(index)}
@@ -71,7 +78,7 @@ export default function Work() {
                   </div>
                 </div>
               </motion.div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
