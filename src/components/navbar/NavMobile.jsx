@@ -2,15 +2,16 @@ import React, { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TfiClose } from "react-icons/tfi";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 export default function NavMobile() {
   const [nav, setNav] = useState(false);
-  const isMobileScreen = window.innerWidth <= 768;
 
-  
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const isMobileScreen = useMediaQuery({ query: "(max-width: 768px)" });
 
   useEffect(() => {
     if (!isMobileScreen && nav) {
