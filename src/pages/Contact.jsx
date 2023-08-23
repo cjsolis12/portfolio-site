@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {motion} from "framer-motion"
 
 export default function Contact() {
     //Email Functions
@@ -45,7 +46,16 @@ export default function Contact() {
   return (
     <>
       <div className="center-screen">
-        <div className="contact-form bg-lilac rounded-lg p-8 ">
+        <motion.div 
+          variants={{
+            hidden: { opacity: 0, y: 200 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 0.25 }}
+        
+        className="contact-form bg-lilac rounded-lg p-8 ">
         <h2 className="text-3xl font-bold text-lilac text-center">Send an Email!</h2>
         <form ref={form} onSubmit={sendEmail}>
         <div className=" mt-8  text-1xl">
@@ -105,7 +115,7 @@ export default function Contact() {
         </div>
         </form>
      
-        </div>
+        </motion.div>
       </div>
       <ToastContainer></ToastContainer>
     </>
