@@ -21,7 +21,7 @@ export default function Work() {
   useScroll
   return (
     <>
-      <div className="mt-64 m-10 mb-4">
+      <div className="mt-16 m-10 mb-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((item, index) => (
             <motion.div
@@ -55,7 +55,7 @@ export default function Work() {
                 transition={{ duration: 0.5 }}
               >
                 <div className=" overlay-content absolute inset-0 flex flex-col items-center justify-center text-center bg-black bg-opacity-75 p-4">
-                  <p className="text-white text-lg md:text-xl lg:text-2xl xl:text-3xl p-4">
+                  <p className="text-white text-lg md:text-xl lg:text-xl xl:text-3xl p-4">
                     {item.description}
                   </p>
                   <div className="flex text-3xl">
