@@ -9,6 +9,10 @@ export default function Navbar() {
       "https://docs.google.com/document/d/1zsEbW0x16dFTWi2zpNTR1jfq_0-uqW4orMeG2kbzjFs/export?format=pdf";
     window.open(fileUrl);
   };
+
+   // Determine if the screen is wider than 768px
+   const isWideScreen = window.innerWidth > 768;
+
     return (
             <div className="nav absolute top-0 left-0 z-50 mx-4 p-8 flex justify-around items-center h-24 px-4 text-white text-xl" >
                 <Link to="/"><h1 className="text-xl ">CLAUDIA SOLIS</h1></Link>
@@ -16,7 +20,10 @@ export default function Navbar() {
                 <NavLinks/>
                 </div>
                 <NavMobile/>
-                <button onClick={handleResumeDownload} className="resume-btn">Resume</button>
+                {isWideScreen && (
+                  <button onClick={handleResumeDownload} className="resume-btn">Resume</button>
+                )}
+                
             </div>
     );
 }
