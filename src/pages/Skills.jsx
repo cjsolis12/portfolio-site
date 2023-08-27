@@ -34,6 +34,7 @@ export default function Skills() {
        
             <li>Git</li>
             <li>GitHub</li>
+            <li>Slack</li>
            
             <div className="text-xl mt-8 text-lilac">Cloud</div>
             <li>AWS</li>

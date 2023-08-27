@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
+import EnterTransition from "../src/animations/EnterTransition"
+
 //Layouts
 import Layout from "./layouts/Layout";
 import Navbar from "./components/navbar/Navbar";
