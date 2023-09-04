@@ -123,7 +123,7 @@ body {
   align-items: center;
   height: 100vh;
 }
-.contact-form {
+.contact-form-container {
   border: 1px solid rgba(255, 255, 255, 0.11);
   width: 100%;
   font-weight: 200;
@@ -148,5 +148,13 @@ body {
   .hero-text {
     font-size: 2.5rem;
     top: 50%;
+  }
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 768px) {
+  .contact-form-container {
+    max-width: 40%; 
+    margin: 0 auto; 
   }
 }
